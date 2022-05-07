@@ -6,12 +6,24 @@
 }
 
 #hero{
-    background-image: url("../img/img1.png");
+    background-image: none;
     background-color: var(--primary-ad-color);
     height: 870px;
     background-repeat: no-repeat;
     background-position: center right;
-    background-size:auto;
+    background-size:cover;
+}
+
+/*fade in de background*/
+
+#hero #marveltext{
+    position: relative;
+    left: -70%;
+    display: none;
+}
+#hero #marvelimage{
+    position: absolute;
+    left: 50%;
 }
 .titre{
     margin-bottom: 50px;
@@ -120,4 +132,24 @@ input[type=submit]{
 .newsletter-formulaire input[type=submit]{
     background-color: white;
     color: #000000;
+}
+
+
+.indexmodal{
+    position: fixed;
+    z-index: 1;
+    width: 50%;
+    left: 25%;
+    top: 20%;
+    display: none;
+}
+
+.modal-content{
+    background-color: var(--blue-color);
+    opacity: 0.9;
+    color: var(--white-ad-color);
+    font-weight: bold;
+    border: 2px solid var(--primary-ad-color);
+    padding: 40px;
+    text-align: center;
 }
